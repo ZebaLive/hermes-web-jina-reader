@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-web-jina-reader"
+version = "0.1.0"
+description = "Jina Reader extraction provider for Hermes Agent"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["httpx>=0.27,<1"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["web.jina_reader*"]
+namespaces = true
